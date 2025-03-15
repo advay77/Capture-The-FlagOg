@@ -2153,7 +2153,7 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
 }
 
-/* Nav Links */
+/* Nav Links (Desktop) */
 .nav-links {
     display: flex;
     gap: 2rem;
@@ -2170,6 +2170,49 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav-links a:hover {
     color: var(--primary-color);
+}
+
+/* Hamburger Menu Icon (Hidden on Desktop) */
+.menu-icon {
+    display: none;
+    font-size: 2rem;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Mobile Navbar */
+@media (max-width: 768px) {
+    /* Hide nav links by default */
+    .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: -100%;
+        width: 220px;
+        background: rgba(10, 10, 10, 0.95);
+        border-left: 2px solid var(--primary-color);
+        box-shadow: var(--neon-glow);
+        padding: 1rem;
+        transition: right 0.3s ease-in-out;
+    }
+
+    /* Show nav links when active */
+    .nav-links.active {
+        right: 0;
+    }
+
+    /* Show hamburger menu */
+    .menu-icon {
+        display: block;
+    }
+
+    /* Mobile Menu Items */
+    .nav-links a {
+        padding: 10px 0;
+        display: block;
+        text-align: left;
+    }
 }
 
 /* Hamburger Menu for Mobile */
