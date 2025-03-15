@@ -2,6 +2,9 @@
 
 A modern, responsive website for the CyberQuest 2025 Capture The Flag (CTF) competition. The website features a dark cyberpunk theme with anime-inspired visuals, interactive elements, and dynamic animations.
 
+## Deployed Link
+https://capture-the-flag-kappa.vercel.app/
+
 ## Features
 
 - 🌟 Futuristic cyberpunk design with neon accents and glitch effects
@@ -84,8 +87,6 @@ The website is compatible with:
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## Deployed Link
-https://capture-the-flag-kappa.vercel.app/
 
 ## License
 
