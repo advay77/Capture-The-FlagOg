@@ -133,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
+/* Default Styles for .register-btn */
 .register-btn {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     border: none;
@@ -148,6 +149,9 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     box-shadow: var(--neon-glow);
     font-size: 1rem; /* Default font size */
+    display: inline-block; /* Ensure it behaves like a button */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline if used as a link */
 }
 
 .register-btn:hover {
