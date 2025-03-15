@@ -2133,3 +2133,95 @@ h1, h2, h3, h4, h5, h6 {
         width: 100px;
     }
 }
+
+
+
+
+
+
+
+/* divyanshi */
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* Hero Text */
+.hero-content {
+    z-index: 2;
+    padding: 2rem;
+}
+
+.glitch-text {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    animation: glitch 725ms infinite;
+}
+
+.subtitle {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Countdown */
+.countdown {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem auto;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
+    box-shadow: var(--neon-glow);
+    min-width: 100px;
+    text-align: center;
+}
+
+.time-value {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-shadow: var(--neon-glow);
+    display: block;
+}
+
+/* Hero Section Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 1rem;
+        height: auto;
+    }
+
+    .glitch-text {
+        font-size: 2.5rem;
+        letter-spacing: 2px;
+    }
+
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .countdown-item {
+        width: 45%;
+        padding: 1rem;
+    }
+}
