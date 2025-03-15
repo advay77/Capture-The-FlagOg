@@ -133,12 +133,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
 }
 
-/* Default Styles for .register-btn */
 .register-btn {
     background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
     border: none;
     color: white;
-    padding: 1rem 2rem; /* Default padding */
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     cursor: pointer;
     transition: var(--transition);
@@ -148,10 +147,6 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     overflow: hidden;
     box-shadow: var(--neon-glow);
-    font-size: 1rem; /* Default font size */
-    display: inline-block; /* Ensure it behaves like a button */
-    text-align: center; /* Center text */
-    text-decoration: none; /* Remove underline if used as a link */
 }
 
 .register-btn:hover {
@@ -160,28 +155,6 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
-    .register-btn {
-        padding: 0.8rem 1.5rem; /* Slightly smaller padding for tablets */
-        font-size: 0.9rem; /* Slightly smaller font size */
-    }
-}
-
-@media (max-width: 768px) {
-    .register-btn {
-        padding: 0.6rem 1.2rem; /* Smaller padding for mobile */
-        font-size: 0.8rem; /* Smaller font size */
-        letter-spacing: 1px; /* Reduce letter spacing */
-    }
-}
-
-@media (max-width: 480px) {
-    .register-btn {
-        padding: 0.5rem 1rem; /* Even smaller padding for very small devices */
-        font-size: 0.75rem; /* Smaller font size */
-    }
-}
 /* Hero Section */
 .hero {
     height: 100vh;
@@ -2158,97 +2131,5 @@ h1, h2, h3, h4, h5, h6 {
     .sponsor-slider::before,
     .sponsor-slider::after {
         width: 100px;
-    }
-}
-
-
-
-
-
-
-
-/* divyanshi */
-
-/* Hero Section */
-.hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-align: center;
-    padding: 2rem;
-}
-
-/* Hero Text */
-.hero-content {
-    z-index: 2;
-    padding: 2rem;
-}
-
-.glitch-text {
-    font-size: 4rem;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    animation: glitch 725ms infinite;
-}
-
-.subtitle {
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-/* Countdown */
-.countdown {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin: 2rem auto;
-    flex-wrap: wrap;
-}
-
-.countdown-item {
-    background: var(--card-bg);
-    padding: 1.5rem;
-    border-radius: var(--border-radius);
-    border: 1px solid var(--primary-color);
-    box-shadow: var(--neon-glow);
-    min-width: 100px;
-    text-align: center;
-}
-
-.time-value {
-    font-size: 3rem;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-shadow: var(--neon-glow);
-    display: block;
-}
-
-/* Hero Section Responsive */
-@media (max-width: 768px) {
-    .hero {
-        padding: 4rem 1rem;
-        height: auto;
-    }
-
-    .glitch-text {
-        font-size: 2.5rem;
-        letter-spacing: 2px;
-    }
-
-    .subtitle {
-        font-size: 1.2rem;
-    }
-
-    .countdown {
-        flex-wrap: wrap;
-        gap: 1rem;
-    }
-
-    .countdown-item {
-        width: 45%;
-        padding: 1rem;
     }
 }
