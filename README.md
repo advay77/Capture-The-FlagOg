@@ -1,105 +1,131 @@
-# CyberQuest 2025 - CTF Competition Website
+# 🌌 **CODE CURSED 2025 - CTF Competition** 🎯  
 
-A modern, responsive website for the CyberQuest 2025 Capture The Flag (CTF) competition. The website features a dark cyberpunk theme with anime-inspired visuals, interactive elements, and dynamic animations.
+🚀 **A futuristic, cyberpunk-themed Capture The Flag (CTF) website** with interactive challenges, neon aesthetics, and glitch effects!  
 
-## Deployed Link
-https://capture-the-flag-kappa.vercel.app/
+🔗 **Live Demo:** [🌐 CODE CURSED 2025](https://capture-the-flag-kappa.vercel.app/)  
 
-## Features
+---
 
-- 🌟 Futuristic cyberpunk design with neon accents and glitch effects
-- 🎯 Interactive challenge cards for different CTF categories
-- ⏰ Dynamic countdown timer to event start
-- 🗺️ Google Maps integration for venue location
-- 💰 Prize section with animated cards
-- 📅 Timeline-based schedule display
-- ❓ Interactive FAQ accordion
-- 📝 Contact form with validation
-- 🎨 Particle animation background
-- 📱 Fully responsive design for all devices
+## ⚡ **Features**  
+🔹 **Futuristic Cyberpunk UI** – Dark theme with neon accents & glitch effects  
+🔹 **Interactive Challenge Cards** – Various CTF categories with hover animations  
+🔹 **⏳ Countdown Timer** – Dynamic event start timer  
+🔹 **🗺️ Venue Location Map** – Google Maps API integration  
+🔹 **🏆 Prize Section** – Animated prize reveal cards  
+🔹 **📅 Event Timeline** – Smooth scroll-based schedule display  
+🔹 **❓ FAQ Accordion** – Expandable sections for common queries  
+🔹 **📝 Contact Form** – Input validation & smooth submission  
+🔹 **🎨 Particle Animation** – Sci-fi styled animated backgrounds  
+🔹 **📱 Fully Responsive** – Optimized for all screen sizes  
 
-## Technologies Used
+---
 
-- HTML5
-- CSS3 (with modern features like CSS Grid, Flexbox, and Animations)
-- JavaScript (ES6+)
-- Google Maps API
-- Font Awesome Icons
-- Google Fonts (Orbitron, Rajdhani)
+## 🛠 **Technologies Used**  
+| 🔧 Tech Stack | 🚀 Features |
+|--------------|------------|
+| **HTML5** | Structuring the web pages |
+| **CSS3** | Modern styling (Grid, Flexbox, Animations) |
+| **JavaScript (ES6+)** | Interactive elements & event handling |
+| **Google Maps API** | Venue location integration |
+| **Font Awesome** | Icons & UI enhancements |
+| **Google Fonts** | Stylish typography (Orbitron, Rajdhani) |
 
-## Setup Instructions
+---
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/cyberquest-2025.git
-   cd cyberquest-2025
-   ```
+## 🚀 **Setup Instructions**  
 
-2. Open `index.html` in your web browser to view the website.
+### **1️⃣ Clone the Repository**  
+```bash
+git clone https://github.com/yourusername/cyberquest-2025.git
+cd cyberquest-2025
+```
 
-3. To modify the website:
-   - Edit `index.html` for content changes
-   - Modify `styles.css` for styling updates
-   - Update `script.js` for functionality changes
+### **2️⃣ Run Locally**  
+📂 Open `index.html` in your browser  
 
-4. To deploy:
-   - Upload all files to your web hosting service
-   - Ensure all paths and references are correctly set
-   - Update the Google Maps API key with your own
+### **3️⃣ Customize the Website**  
+🖊 **Content:** Edit `index.html`  
+🎨 **Styles:** Modify `styles.css`  
+⚙️ **Scripts:** Update `script.js`  
 
-## Customization
+### **4️⃣ Deploy**  
+🌍 Upload files to your hosting service  
+🔑 Update Google Maps API key in `script.js`  
 
-### Colors
-The website uses a custom color scheme defined in CSS variables:
+---
+
+## 🎨 **Customization Guide**  
+
+### 🎨 **Color Scheme**  
 ```css
 :root {
-    --primary-color: #00f3ff;
-    --secondary-color: #ff00ff;
-    --accent-color: #00ff9d;
-    --background-color: #0a0a0a;
-    --text-color: #ffffff;
+    --primary-color: #00f3ff;  /* Neon Blue */
+    --secondary-color: #ff00ff; /* Cyber Magenta */
+    --accent-color: #00ff9d;  /* Glitch Green */
+    --background-color: #0a0a0a; /* Dark Theme */
+    --text-color: #ffffff; /* Bright White */
 }
 ```
 
-### Fonts
-- Primary Font: Orbitron (headers and titles)
-- Secondary Font: Rajdhani (body text)
+### 🖋 **Typography**  
+🔤 **Primary Font:** Orbitron *(Titles & Headers)*  
+🔤 **Secondary Font:** Rajdhani *(Body Text)*  
 
-### Images
-- Replace the placeholder images in the `/images` directory with your own
-- Maintain the same aspect ratios for optimal display
-- Optimize images for web use
+### 🖼 **Images**  
+📂 Replace images in `/images/` with your own  
+⚡ Optimize for fast loading & better performance  
 
-## Browser Support
+---
 
-The website is compatible with:
-- Chrome (latest)
-- Firefox (latest)
-- Safari (latest)
-- Edge (latest)
-- Opera (latest)
+## 🌍 **Browser Support**  
+✅ **Chrome** (Latest)  
+✅ **Firefox** (Latest)  
+✅ **Safari** (Latest)  
+✅ **Edge** (Latest)  
+✅ **Opera** (Latest)  
 
-## Contributing
+---
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## 🤝 **Contributing**  
 
+🚀 Want to improve **CyberQuest 2025**? Follow these steps:  
 
-## License
+1️⃣ **Fork the repository**  
+2️⃣ **Create a new feature branch**  
+   ```bash
+   git checkout -b feature/AmazingFeature
+   ```
+3️⃣ **Commit your changes**  
+   ```bash
+   git commit -m '🚀 Added an AmazingFeature!'
+   ```
+4️⃣ **Push to the branch**  
+   ```bash
+   git push origin feature/AmazingFeature
+   ```
+5️⃣ **Open a Pull Request** 🎉  
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+---
 
-## Contact
+## 📜 **License**  
+📝 **MIT License** - See the [LICENSE](LICENSE) file for details.  
 
-Your Name - [@yourusername](https://twitter.com/yourusername)
-Project Link: [https://github.com/yourusername/cyberquest-2025](https://github.com/yourusername/cyberquest-2025)
+---
 
-## Acknowledgments
+## 📩 **Contact**  
+👤 **Your Name** – [Twitter @yourusername](https://twitter.com/yourusername)  
+🔗 **Project Repo** – [GitHub](https://github.com/yourusername/cyberquest-2025)  
 
-- Font Awesome for icons
-- Google Fonts for typography
-- [Anime.js](https://animejs.com/) for animations
-- [Particles.js](https://vincentgarreau.com/particles.js/) for inspiration on particle effects
+---
+
+## 🎖 **Acknowledgments**  
+💠 **Font Awesome** – For sleek icons  
+💠 **Google Fonts** – For beautiful typography  
+💠 **[Anime.js](https://animejs.com/)** – For smooth animations  
+💠 **[Particles.js](https://vincentgarreau.com/particles.js/)** – For stunning particle effects  
+
+🔥 **Get ready to hack the future with CyberQuest 2025!** 🏆🔓💻  
+
+---
+
+This README now has a **bold, engaging, and futuristic** feel! 🚀 Let me know if you want any **further tweaks**. 😊
