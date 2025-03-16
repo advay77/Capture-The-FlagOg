@@ -1882,7 +1882,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Team Section Styles */
 .team {
-    padding: 100px 20px;
+    padding: 60px 20px; /* Reduced padding for smaller screens */
     background-color: rgba(10, 10, 10, 0.8);
     position: relative;
     border: 1px solid rgba(255, 51, 51, 0.2);
@@ -1894,12 +1894,12 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
+    flex-direction: column; /* Stack sections vertically on smaller screens */
 }
 
 .team-leads {
     display: flex;
     flex-direction: row;
-    flex: 1;
     gap: 30px;
     justify-content: center;
 }
@@ -1917,9 +1917,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for smaller screens */
     gap: 20px;
-    flex: 1.5;
 }
 
 .team-photo-wrapper {
@@ -1933,24 +1932,20 @@ h1, h2, h3, h4, h5, h6 {
 .team-lead-photo,
 .team-member-photo {
     width: 100%;
+    height: 100%; /* Make height flexible */
     object-fit: cover;
     transition: transform 0.5s ease, filter 0.5s ease;
     display: block;
 }
 
 .team-lead .team-photo-wrapper {
-    height: 350px;
+    height: 300px; /* Reduced height for smaller screens */
     max-width: 100%;
-    width: 260px;
-}
-
-.team-lead-photo {
-    height: 100%;
-    object-position: center top;
+    width: 100%; /* Make width flexible */
 }
 
 .team-member .team-photo-wrapper {
-    height: 180px;
+    height: 150px; /* Reduced height for smaller screens */
 }
 
 .team-photo-overlay {
@@ -2055,28 +2050,61 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
-@media (max-width: 768px) {
-    .team-container {
-        flex-direction: column;
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .team {
+        padding: 50px 20px; /* Further reduced padding for tablets */
     }
-    
-    .team-leads {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .team-members {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-    
+
     .team-lead .team-photo-wrapper {
-        height: 400px;
-        width: 250px;
+        height: 250px; /* Adjusted height for tablets */
     }
-    
+
     .team-member .team-photo-wrapper {
-        height: 160px;
+        height: 120px; /* Adjusted height for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding: 40px 15px; /* Reduced padding for mobile */
+    }
+
+    .team-leads {
+        flex-direction: column; /* Stack team leads vertically */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .team-lead .team-photo-wrapper {
+        height: 200px; /* Adjusted height for mobile */
+        width: 80%; /* Make width flexible */
+    }
+
+    .team-member .team-photo-wrapper {
+        height: 100px; /* Adjusted height for mobile */
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        padding: 30px 10px; /* Further reduced padding for very small devices */
+    }
+
+    .team-lead .team-photo-wrapper {
+        height: 180px; /* Adjusted height for very small devices */
+    }
+
+    .team-member .team-photo-wrapper {
+        height: 80px; /* Adjusted height for very small devices */
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjusted for very small screens */
     }
 }
 
@@ -2108,7 +2136,6 @@ h1, h2, h3, h4, h5, h6 {
 .team-member:nth-child(3) {
     animation-delay: 0.8s;
 }
-
 .sponsor-particles {
     position: absolute;
     top: 0;
