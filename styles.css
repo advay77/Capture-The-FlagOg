@@ -1878,7 +1878,9 @@ h1, h2, h3, h4, h5, h6 {
     100% {
         transform: translateX(-50%);
     }
-}/* Global Styles for Team Section */
+}
+
+/* Team Section Styles */
 .team {
     padding: 100px 20px;
     background-color: rgba(10, 10, 10, 0.8);
@@ -1897,9 +1899,9 @@ h1, h2, h3, h4, h5, h6 {
 .team-leads {
     display: flex;
     flex-direction: row;
+    flex: 1;
     gap: 30px;
     justify-content: center;
-    flex: 1;
 }
 
 .team-lead {
@@ -1931,26 +1933,20 @@ h1, h2, h3, h4, h5, h6 {
 .team-lead-photo,
 .team-member-photo {
     width: 100%;
-    height: 100%;
     object-fit: cover;
-    object-position: center top; /* Default focus on the top */
     transition: transform 0.5s ease, filter 0.5s ease;
     display: block;
 }
 
-/* Adjust Amulya's photo */
-img[src="images/amulya.jpg"] {
-    object-position: center bottom; /* Focus on the bottom of the image */
-}
-
-/* Adjust the container height for Amulya's photo */
-.team-member:nth-child(3) .team-photo-wrapper {
-    height: 200px; /* Adjust this value as needed */
-}
-
 .team-lead .team-photo-wrapper {
     height: 350px;
+    max-width: 100%;
     width: 260px;
+}
+
+.team-lead-photo {
+    height: 100%;
+    object-position: center top;
 }
 
 .team-member .team-photo-wrapper {
@@ -2059,67 +2055,28 @@ img[src="images/amulya.jpg"] {
     opacity: 1;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
     .team-container {
         flex-direction: column;
     }
-
+    
     .team-leads {
-        flex-direction: row;
-        gap: 20px;
-    }
-
-    .team-lead .team-photo-wrapper {
-        height: 300px;
-        width: 200px;
-    }
-
-    .team-member .team-photo-wrapper {
-        height: 150px;
-    }
-}
-
-@media (max-width: 768px) {
-    .team {
-        padding: 60px 20px;
-    }
-
-    .team-leads {
+        display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
     }
-
-    .team-lead .team-photo-wrapper {
-        height: 250px;
-        width: 100%;
-    }
-
-    .team-member .team-photo-wrapper {
-        height: 120px;
-    }
-
+    
     .team-members {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-}
-
-@media (max-width: 480px) {
-    .team {
-        padding: 40px 15px;
-    }
-
+    
     .team-lead .team-photo-wrapper {
-        height: 200px;
+        height: 400px;
+        width: 250px;
     }
-
+    
     .team-member .team-photo-wrapper {
-        height: 100px;
-    }
-
-    .team-members {
-        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        height: 160px;
     }
 }
 
@@ -2151,6 +2108,7 @@ img[src="images/amulya.jpg"] {
 .team-member:nth-child(3) {
     animation-delay: 0.8s;
 }
+
 .sponsor-particles {
     position: absolute;
     top: 0;
