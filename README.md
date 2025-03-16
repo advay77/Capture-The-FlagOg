@@ -113,8 +113,8 @@ cd cyberquest-2025
 ---
 
 ## 📩 **Contact**  
-👤 **Your Name** – [Twitter @yourusername](https://twitter.com/yourusername)  
-🔗 **Project Repo** – [GitHub](https://github.com/yourusername/cyberquest-2025)  
+👤 **Your Name** – [G-Mail @yourusername](bizbyte2024@gmail.com)  
+🔗 **Project Repo** – [GitHub](https://github.com/advay77/Capture-The-FlagOg)  
 
 ---
 
