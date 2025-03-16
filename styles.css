@@ -1882,7 +1882,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Team Section Styles */
 .team {
-    padding: 60px 20px; /* Reduced padding for smaller screens */
+    padding: 100px 20px; /* Restore original padding */
     background-color: rgba(10, 10, 10, 0.8);
     position: relative;
     border: 1px solid rgba(255, 51, 51, 0.2);
@@ -1894,7 +1894,6 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
-    flex-direction: column; /* Stack sections vertically on smaller screens */
 }
 
 .team-leads {
@@ -1902,6 +1901,7 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: row;
     gap: 30px;
     justify-content: center;
+    flex: 1;
 }
 
 .team-lead {
@@ -1917,8 +1917,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .team-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    flex: 1.5;
 }
 
 .team-photo-wrapper {
@@ -1932,20 +1933,19 @@ h1, h2, h3, h4, h5, h6 {
 .team-lead-photo,
 .team-member-photo {
     width: 100%;
-    height: 100%; /* Make height flexible */
-    object-fit: cover;
+    height: 100%; /* Ensure height fills the container */
+    object-fit: cover; /* Ensure images cover the container without distortion */
     transition: transform 0.5s ease, filter 0.5s ease;
     display: block;
 }
 
 .team-lead .team-photo-wrapper {
-    height: 300px; /* Reduced height for smaller screens */
-    max-width: 100%;
-    width: 100%; /* Make width flexible */
+    height: 350px; /* Restore original height */
+    width: 260px; /* Restore original width */
 }
 
 .team-member .team-photo-wrapper {
-    height: 150px; /* Reduced height for smaller screens */
+    height: 180px; /* Restore original height */
 }
 
 .team-photo-overlay {
@@ -2050,6 +2050,98 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .team-container {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+
+    .team-leads {
+        flex-direction: row; /* Keep team leads in a row for tablets */
+        gap: 20px;
+    }
+
+    .team-lead .team-photo-wrapper {
+        height: 300px; /* Slightly smaller height for tablets */
+        width: 200px; /* Slightly smaller width for tablets */
+    }
+
+    .team-member .team-photo-wrapper {
+        height: 150px; /* Slightly smaller height for tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .team {
+        padding: 60px 20px; /* Reduced padding for mobile */
+    }
+
+    .team-leads {
+        flex-direction: column; /* Stack team leads vertically on mobile */
+        align-items: center;
+        gap: 20px;
+    }
+
+    .team-lead .team-photo-wrapper {
+        height: 250px; /* Adjusted height for mobile */
+        width: 100%; /* Full width for mobile */
+    }
+
+    .team-member .team-photo-wrapper {
+        height: 120px; /* Adjusted height for mobile */
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjusted for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        padding: 40px 15px; /* Further reduced padding for very small devices */
+    }
+
+    .team-lead .team-photo-wrapper {
+        height: 200px; /* Adjusted height for very small devices */
+    }
+
+    .team-member .team-photo-wrapper {
+        height: 100px; /* Adjusted height for very small devices */
+    }
+
+    .team-members {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjusted for very small screens */
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Team member animations */
+.team-member {
+    animation: fadeIn 0.8s forwards;
+    opacity: 0;
+}
+
+.team-member:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.team-member:nth-child(2) {
+    animation-delay: 0.65s;
+}
+
+.team-member:nth-child(3) {
+    animation-delay: 0.8s;
+}
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .team {
