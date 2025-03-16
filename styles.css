@@ -1879,7 +1879,6 @@ h1, h2, h3, h4, h5, h6 {
         transform: translateX(-50%);
     }
 }
-
 .team {
     padding: 100px 20px;
     background-color: rgba(10, 10, 10, 0.8);
@@ -1939,9 +1938,14 @@ h1, h2, h3, h4, h5, h6 {
     display: block;
 }
 
-/* Adjust the specific team member's photo */
+/* Adjust the third team member's photo */
 .team-member:nth-child(3) .team-member-photo {
     object-position: center 30%; /* Adjust this value to focus on the face */
+}
+
+/* Adjust the container height for the specific team member */
+.team-member:nth-child(3) .team-photo-wrapper {
+    height: 200px; /* Adjust this value as needed */
 }
 
 .team-lead .team-photo-wrapper {
