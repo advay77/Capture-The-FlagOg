@@ -1880,7 +1880,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Team Section Styles */
 .team {
     padding: 100px 20px;
     background-color: rgba(10, 10, 10, 0.8);
@@ -1935,9 +1934,14 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top; /* Focus on the top part of the image */
+    object-position: center top; /* Default focus on the top */
     transition: transform 0.5s ease, filter 0.5s ease;
     display: block;
+}
+
+/* Adjust the specific team member's photo */
+.team-member:nth-child(3) .team-member-photo {
+    object-position: center 30%; /* Adjust this value to focus on the face */
 }
 
 .team-lead .team-photo-wrapper {
